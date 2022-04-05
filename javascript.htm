@@ -2,10 +2,8 @@
 <html>
 <head>
 <script>
-
-
 function validateForm() {
-  let x = document.forms["myForm"]["fullname"].value;
+  let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
     alert("Name must be filled out");
     return false;
@@ -14,11 +12,26 @@ function validateForm() {
 </script>
 </head>
 <body>
-<h2>Personal details </h1>
+
+<h2>Personal details</h2>
+
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="fname">
+  Name: <input type="text" name="fname"><br><br>
+  Email: <input type="text" name="Email"><br><br>
+  Phone no: <input type="text" name="Phone no"><br><br>
   <input type="submit" value="Submit">
 </form>
+
+<h2>Thankyou </h2>
+
+
+Thank You for your inquiry! <br><br>
+A 4 digit verification number has been sent to your phone number:<91-XXXXXXXXXX>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"><br>
+  OTP: <input type="text" ="text">
+ 
+ <button type="button" onvalidate="document.getElementById('demo').">Validate !</button>
 
 </body>
 </html>
